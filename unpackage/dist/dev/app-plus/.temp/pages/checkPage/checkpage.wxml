@@ -1,1 +1,1 @@
-<import src="../../components/checkPage$20c789a8" /><template is="checkPage$20c789a8" data="{{ ...$root['0'], $root }}"/>
+<import src="../../components/checkpage$fc4f01e8" /><template is="checkpage$fc4f01e8" data="{{ ...$root['0'], $root }}"/>

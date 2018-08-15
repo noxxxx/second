@@ -1,6 +1,10 @@
 <template name="index$2fd54f42">
   <view class="_view data-v-462fb953 content">
+    <view class="_view data-v-462fb953 mask" hidden="{{!(showMask)}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></view>
+    <view class="_view data-v-462fb953 popup popup-top" hidden="{{!(showState.top)}}">
+      <text class="_text data-v-462fb953">顶部 popup</text>
+    </view>
     <text class="_text data-v-462fb953 title">{{title}}</text>
-    <button type="primary" plain="true" class="_button data-v-462fb953">按钮</button>
+    <button type="primary" plain="true" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-462fb953">新的清单</button>
   </view>
 </template>

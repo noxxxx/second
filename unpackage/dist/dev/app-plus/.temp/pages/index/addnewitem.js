@@ -1,4 +1,4 @@
 
 require('../../static/js/manifest')
 require('../../static/js/vendor')
-require('../../static/js/pages/checkpage/checkpage')
+require('../../static/js/pages/index/addnewitem')

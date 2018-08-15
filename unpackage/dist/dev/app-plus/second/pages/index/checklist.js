@@ -1,8 +1,8 @@
 
       !(function(){
         var uniAppViewReadyCallback = function(){
-          setCssToHead([[2,2],])();
-document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/checkpage/checkpage.wxml') } }));
+          setCssToHead([[2,4],])();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index/checklist.wxml') } }));
         }
         if(window.__uniAppViewReady__){
           uniAppViewReadyCallback()

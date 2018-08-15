@@ -1,0 +1,29 @@
+<template name="index$702c4216">
+  <view class="_view data-v-bf9d88b2 content">
+    <view class="_view data-v-bf9d88b2 mask" hidden="{{!(showMask)}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></view>
+    <view class="_view data-v-bf9d88b2 popup popup-top" hidden="{{!(showState.top)}}">
+      <text class="_text data-v-bf9d88b2">顶部 popup</text>
+    </view>
+    <view class="_view data-v-bf9d88b2 uni-list">
+      <view class="_view data-v-bf9d88b2 uni-list-cell-divider"> 右侧带数字角标 </view>
+      <view class="_view data-v-bf9d88b2 uni-list-cell" hover-class="uni-list-cell-hover">
+        <view class="_view data-v-bf9d88b2 uni-list-cell-navigate"> Item2
+          <text class="_text data-v-bf9d88b2 uni-badge uni-badge-danger">23</text>
+        </view>
+      </view>
+      <view class="_view data-v-bf9d88b2 uni-list-cell uni-list-cell-last" hover-class="uni-list-cell-hover">
+        <view class="_view data-v-bf9d88b2 uni-list-cell-navigate"> Item1
+          <text class="_text data-v-bf9d88b2 uni-badge uni-badge-success">123</text>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-bf9d88b2 uni-list-cell uni-collapse">
+      <view class="_view data-v-bf9d88b2 uni-list-cell-navigate uni-navigate-bottom {{list.open ? 'uni-active' : ''}}" hover-class="uni-list-cell-hover" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"> {{list.name}} </view>
+      <view class="_view data-v-bf9d88b2 uni-list uni-collapse {{list.open ? 'uni-active' : ''}}">
+        <view class="_view data-v-bf9d88b2 uni-list-cell" hover-class="uni-list-cell-hover" wx:key="key" key="{{key}}" url="{{item.url}}" bindtap="handleProxy" data-eventid="{{'2-'+key}}" data-comkey="{{$k}}" wx:for="{{list.pages}}" wx:for-index="key" wx:for-item="item">
+          <view class="_view data-v-bf9d88b2 uni-list-cell-navigate uni-navigate-right"> {{item.name}} </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

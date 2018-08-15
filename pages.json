@@ -3,13 +3,25 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-appxx"
+				"navigationBarTitleText": "我的出差清单"
 			}
 		},
 		{
-			"path": "pages/checkPage/checkpage",
+			"path": "pages/checkpage/checkpage",
 			"style": {
-				"navigationBarTitleText": "uni-appxxx"
+				"navigationBarTitleText": "check项"
+			}
+		},
+		{
+			"path": "pages/index/addnewitem",
+			"style": {
+				"navigationBarTitleText": "新增出差项"
+			}
+		},
+		{
+			"path": "pages/index/checklist",
+			"style": {
+				"navigationBarTitleText": "checklist"
 			}
 		}
 	],
@@ -28,14 +40,14 @@
       "pagePath": "pages/index/index",
       "iconPath": "static/image/api.png",
       "selectedIconPath": "static/image/apiHL.png",
-      "text": "接口"
-    },
-		{
-			"pagePath": "pages/checkPage/checkpage",
-			"iconPath": "static/image/component.png",
-			"selectedIconPath": "static/image/componentHL.png",
-			"text": "组件"
-		}
+      "text": "check"
+    }
+// 		{
+// 			"pagePath": "pages/checkpage/checkpage",
+// 			"iconPath": "static/image/component.png",
+// 			"selectedIconPath": "static/image/componentHL.png",
+// 			"text": "组件"
+// 		}
 		]
   }
 }

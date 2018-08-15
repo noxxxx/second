@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/checkPage/checkpage"
+    "pages/checkpage/checkpage",
+    "pages/index/addnewitem",
+    "pages/index/checklist"
   ],
   "window": {
     "navigationBarTextStyle": "white",
@@ -20,12 +22,6 @@
         "iconPath": "static/image/api.png",
         "selectedIconPath": "static/image/apiHL.png",
         "text": "接口"
-      },
-      {
-        "pagePath": "pages/checkPage/checkpage",
-        "iconPath": "static/image/component.png",
-        "selectedIconPath": "static/image/componentHL.png",
-        "text": "组件"
       }
     ]
   }

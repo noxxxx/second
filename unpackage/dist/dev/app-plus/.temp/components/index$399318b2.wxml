@@ -1,0 +1,21 @@
+<template name="index$399318b2">
+  <view class="_view data-v-0a2d5141 content">
+    <view class="_view data-v-0a2d5141 mask" hidden="{{!(showMask)}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></view>
+    <view class="_view data-v-0a2d5141 popup popup-top" hidden="{{!(showState.top)}}">
+      <text class="_text data-v-0a2d5141">顶部 popup</text>
+    </view>
+    <view class="_view data-v-0a2d5141 uni-list">
+      <view class="_view data-v-0a2d5141 uni-list-cell-divider"> 右侧带数字角标 </view>
+      <view class="_view data-v-0a2d5141 uni-list-cell" hover-class="uni-list-cell-hover">
+        <view class="_view data-v-0a2d5141 uni-list-cell-navigate"> Item2
+          <text class="_text data-v-0a2d5141 uni-badge uni-badge-danger">23</text>
+        </view>
+      </view>
+      <view class="_view data-v-0a2d5141 uni-list-cell uni-list-cell-last" hover-class="uni-list-cell-hover">
+        <view class="_view data-v-0a2d5141 uni-list-cell-navigate"> Item1
+          <text class="_text data-v-0a2d5141 uni-badge uni-badge-success">123</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

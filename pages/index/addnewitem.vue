@@ -4,15 +4,32 @@
 		<view class="popup popup-top" v-show="showState.top">
 			<text>顶部 popup</text>
 		</view>
-		<text class="title">{{title}}</text>
-		<button type="primary" plain="true" @tap="createNewList">新的清单</button>
+
+		<view class="uni-list">
+			<view class="uni-list-cell-divider">
+				右侧带数字角标
+			</view>
+			<view class="uni-list-cell" hover-class="uni-list-cell-hover">
+				<view class="uni-list-cell-navigate">
+					Item2
+					<text class="uni-badge uni-badge-danger">23</text>
+				</view>
+			</view>
+			<view class="uni-list-cell uni-list-cell-last" hover-class="uni-list-cell-hover">
+				<view class="uni-list-cell-navigate">
+					Item1
+					<text class="uni-badge uni-badge-success">123</text>
+				</view>
+			</view>
+		</view>
+	
 	</view>
 </template>
 
 <script>
 	export default {
 		data: {
-			title: '',
+			title: 'ooo00ooo',
 			showState: {
 				top: false
 			},
@@ -22,8 +39,7 @@
 		methods:{
 			createNewList: function (e) {
 				uni.navigateTo({
-					url: '../checkpage/checkpage'
-						// url: 'addnewitem'	
+					url: 'pages/checkpage/chackpage'
 				})
 			},
 			show() {
@@ -39,13 +55,14 @@
 </script>
 
 <style>
-    @import '../../common/mine.css';
-	
+    @import '../../common/uni.css';
+	@import '../../common/mine.css';
 	
 	.content {
 		flex: 1;
 		justify-content: center;
-		align-items: center;
+		/* align-items: center; */
+		padding-top: 0px;
 	}
 
 	.title {
@@ -63,34 +80,4 @@
 		background-color: rgba(0, 0, 0, .3);
 	}
 
-	.list-view-item {
-		position: relative;
-		padding: 22px 30px;
-		overflow: hidden;
-		font-size: 28px;
-	}
-
-	.list-view-item::after {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		left: 30px;
-		height: 2px;
-		content: '';
-		-webkit-transform: scaleY(.5);
-		transform: scaleY(.5);
-		background-color: #c8c7cc;
-	}
-
-	.btn-row .btn {
-		margin: 20px;
-	}
-
-	.desc {
-		padding: 10px 20px;
-		font-size: 30px;
-		line-height: 30px;
-		margin-top: 150px;
-		text-align: center;
-	}	
 </style>

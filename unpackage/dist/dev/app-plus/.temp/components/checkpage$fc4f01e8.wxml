@@ -1,0 +1,10 @@
+<template name="checkpage$fc4f01e8">
+  <view class="_view data-v-66976fc6 content">
+    <view class="_view data-v-66976fc6 mask" hidden="{{!(showMask)}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></view>
+    <view class="_view data-v-66976fc6 popup popup-top" hidden="{{!(showState.top)}}">
+      <text class="_text data-v-66976fc6">顶部 popup</text>
+    </view>
+    <text class="_text data-v-66976fc6 title">{{title}}</text>
+    <button type="primary" plain="true" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-66976fc6">新的清单</button>
+  </view>
+</template>
