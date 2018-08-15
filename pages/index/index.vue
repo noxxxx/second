@@ -1,13 +1,14 @@
 <template>
 	<view class="content">
 		<text class="title">{{title}}</text>
+		<button type="primary" plain="true">按钮</button>
 	</view>
 </template>
 
 <script>
 	export default {
 		data: {
-			title: 'Hello!!'
+			title: 'HelloXX!'
 		}
 	}
 </script>

@@ -1,0 +1,5 @@
+<template name="checkPage$20c789a8">
+  <view class="_view data-v-3a78043d content">
+    <text class="_text data-v-3a78043d title">{{title}}</text>
+  </view>
+</template>
